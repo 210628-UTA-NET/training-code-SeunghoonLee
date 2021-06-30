@@ -1,10 +1,17 @@
 ﻿using System;
 using HouseFunction;
 
+/*
+    Naming conventions in C#
+        We use PascalCase for most of the naming convention
+        We use camelCase for naming fields
+*/
+
 namespace HelloWorld
 {
     class Program
     {
+        // We can use underscore for private fields to reference them easier in our code
         private static string _first = "Hello";
         private static string _last = "World!";
 
@@ -26,6 +33,10 @@ namespace HelloWorld
             Console.WriteLine(objHouse.Price);
             objHouse.Name = "Seunghoon's House";
             Console.WriteLine(objHouse.Name);
+
+            Console.WriteLine("Hello" == "Hello");
+
+            Collection.CollectionMain();
 
         }
     }
