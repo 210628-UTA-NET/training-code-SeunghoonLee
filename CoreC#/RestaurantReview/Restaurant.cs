@@ -19,6 +19,9 @@ namespace RestaurantReview
                 _city = value;
             } 
         }
+        
         public string State { get; set; }
+
+        public List<Review> Reviews { get; set; }
     }
 }
