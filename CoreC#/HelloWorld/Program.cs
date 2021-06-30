@@ -38,6 +38,8 @@ namespace HelloWorld
 
             Collection.CollectionMain();
 
+            OOP.OOPMain();
+
         }
     }
 
