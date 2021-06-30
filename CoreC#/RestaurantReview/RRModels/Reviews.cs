@@ -1,6 +1,6 @@
 using System;
 
-namespace RestaurantReview
+namespace RRModels
 {
     public class Review
     {
