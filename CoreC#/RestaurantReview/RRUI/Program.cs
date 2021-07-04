@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+using RRModels;
 
 namespace RRUI
 {
@@ -6,7 +8,34 @@ namespace RRUI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IMenu restMenu = new MainMenu();
+            bool repeat = true;
+            string currentMenu = "MainMenu";
+
+            while(repeat)
+            {
+                Console.Clear();
+                restMenu.Menu();
+                currentMenu = restMenu.YourChoice();
+
+                switch(currentMenu)
+                {
+                    case "MainMenu" :
+                        restMenu = new MainMenu();
+                        break;
+                    case "RestaurantMenu" :
+                        restMenu = new RestaurantMenu();
+                        break;
+                    case "Exit" :
+                        repeat = false;
+                        break;
+                    default :
+                        Console.WriteLine("Cannot process what you want please try again");
+                        Thread.Sleep(1000);
+                        break;
+                }
+
+            }
         }
     }
 }
