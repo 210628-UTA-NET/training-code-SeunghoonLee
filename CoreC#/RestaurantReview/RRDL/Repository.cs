@@ -6,7 +6,7 @@ using RRModels;
 
 namespace RRDL
 {
-    public class Respository : IReposityory
+    public class Respository : IRepository
     {
         private const string _filePath = "./Database/Restaurant.json";
         private string _jsonString;
