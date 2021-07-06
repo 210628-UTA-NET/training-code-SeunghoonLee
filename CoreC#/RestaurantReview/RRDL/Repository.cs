@@ -27,7 +27,7 @@ namespace RRDL
                 throw new Exception("File path was invalid!");
             }
             
-            return JsonSerializer.Deserialize<List<Restaurant>>(_filePath, new JsonSerializerOptions())
+            return JsonSerializer.Deserialize<List<Restaurant>>(_filePath, new JsonSerializerOptions());
 
         }
 
