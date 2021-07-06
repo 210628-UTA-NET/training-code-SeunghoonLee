@@ -38,6 +38,11 @@ namespace HouseFunction
             _color = p_color;
         }
 
+        public override string ToString()
+        {
+            return $"Name: {Name}, Price: {Price}";
+        }
+
 
     }
 }

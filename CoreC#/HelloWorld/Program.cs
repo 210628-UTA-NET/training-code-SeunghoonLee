@@ -42,6 +42,9 @@ namespace HelloWorld
 
             BoxingandUnboxing.BoxingAndUnboxingMain();
 
+            Console.Clear();
+            Serialization.SerializtionMain();
+
         }
     }
 
