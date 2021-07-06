@@ -7,7 +7,7 @@ namespace RRDL
     /// <summary>
     /// It is responsible for accessing our database (in this case it will be a JSON file stored in our folder)
     /// </summary>
-    public interface IReposityory
+    public interface IRepository
     {
         /// <summary>
         /// Gets a list of Restaurants stored in our database 
