@@ -12,18 +12,21 @@ namespace RRUI
             Console.WriteLine("[0] Exit");
         }
 
-        public string YourChoice()
+        public MenuType YourChoice()
         {
             string userInput = Console.ReadLine();
             
             switch(userInput)
             {
-                case "1":
-                    return "RestaurantMenu";
                 case "0":
-                    return "Exit";
+                    return MenuType.Exit;
+                case "1":
+                    return MenuType.RestaurantMenu;
                 default:
-                    return "Unkown";
+                    Console.WriteLine("Input was not correct");
+                    Console.WriteLine("Press Enter to continure");
+                    Console.ReadLine();
+                    return MenuType.MainMenu;
             }
         }
     }

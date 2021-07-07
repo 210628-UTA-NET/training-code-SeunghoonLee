@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 
 namespace RRUI
 {
@@ -12,18 +13,21 @@ namespace RRUI
             Console.WriteLine("[0] Go Back");
         }
 
-        public string YourChoice()
+        public MenuType YourChoice()
         {
             string userInput = Console.ReadLine();
 
             switch(userInput)
             {
-                case "1" :
-                    return "RestaurantMenu";
                 case "0" :
-                    return "MainMenu";
+                    return MenuType.MainMenu;
+                case "1" :
+                    return MenuType.RestaurantMenu;
                 default :
-                    return "Unknown";
+                    Console.WriteLine("Input was not correct");
+                    Console.WriteLine("Press Enter to continure");
+                    Console.ReadLine();
+                    return MenuType.RestaurantMenu;
             }
         }
     }
