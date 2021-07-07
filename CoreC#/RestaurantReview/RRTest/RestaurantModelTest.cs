@@ -23,5 +23,23 @@ namespace RRTest
             //Assert
                 Assert.Equal(city, testRestaurant.City);
         }
+
+        /// <summary>
+        /// The test will check if the validation works in Restaurant Model
+        /// I will purposely put information that will be wrong and should throw an exception
+        /// </summary>
+        /// <param name = "input">This is the input that our test case will check in Act</param> 
+        [Theory]
+        [InlineData("Peninsula1234")]
+        [InlineData("0123Peninsula")]
+        public void CityShouldNotSetInvalidData(string input)
+        {
+            //Arrange
+            Restaurant testRestaurant = new Restaurant();
+            string city = input;
+            //Act
+            Assert.Throws<Exception>(() => testRestaurant.City = city);
+  
+        }
     }
 }
