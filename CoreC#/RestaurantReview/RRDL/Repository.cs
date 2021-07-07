@@ -6,9 +6,9 @@ using RRModels;
 
 namespace RRDL
 {
-    public class Respository : IRepository
+    public class Repository : IRepository
     {
-        private const string _filePath = "./Database/Restaurant.json";
+        private const string _filePath = "./../RRDL/Database/Restaurant.json";
         private string _jsonString;
 
         public Restaurant AddRestaurant(Restaurant p_rest)
@@ -27,7 +27,7 @@ namespace RRDL
                 throw new Exception("File path was invalid!");
             }
             
-            return JsonSerializer.Deserialize<List<Restaurant>>(_filePath, new JsonSerializerOptions());
+            return JsonSerializer.Deserialize<List<Restaurant>>(_jsonString);
 
         }
 
