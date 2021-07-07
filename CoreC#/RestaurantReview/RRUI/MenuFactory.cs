@@ -1,7 +1,8 @@
 using RRBL;
 using RRDL;
 
-namespace RRUI {
+namespace RRUI 
+{
     public class MenuFactory : IFactory
     {
         public IMenu GetMenu(MenuType p_menu)
@@ -20,3 +21,4 @@ namespace RRUI {
 
         }
     }
+}
