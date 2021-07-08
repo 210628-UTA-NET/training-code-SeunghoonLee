@@ -1,16 +1,16 @@
 
 create table Restaurant(
     Id int identity,
-    RestaurantName varchar(40),
+    Name varchar(40),
     City varchar(30),
-    RestaurantState varchar(30),
+    State varchar(30),
 
     constraint pk_restaurant primary key (Id)
 );
 
 select * from Restaurant;
 
-insert into Restaurant(RestaurantName, City, RestaurantState)
+insert into Restaurant(Name, City, State)
     values  ('Stephen Restaurant', 'Houston', 'Texas'),
             ('Michael Restaurant', 'Orlando', 'Florida'),
             ('Travis Restaurant','Austin','Texas');
