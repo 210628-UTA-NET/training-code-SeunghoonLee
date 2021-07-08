@@ -15,5 +15,6 @@ namespace RRBL
         /// </summary>
         /// <returns>a list of restaurant</returns>
         List<Restaurant> GetAllRestaurant();
+        Restaurant AddRestaurant(Restaurant p_rest);
     }
 }

@@ -13,7 +13,12 @@ namespace RRDL
 
         public Restaurant AddRestaurant(Restaurant p_rest)
         {
-            throw new System.NotImplementedException();
+            List<Restaurant> listOfRestaurant = GetAllRestaurant();
+            listOfRestaurant.Add(p_rest);
+            _jsonString = JsonSerializer.Serialize(listOfRestaurant, new JsonSerializerOptions{WriteIndented = true});
+            File.WriteAllText(_filePath, _jsonString);
+
+            return p_rest;
         }
 
         public List<Restaurant> GetAllRestaurant()
