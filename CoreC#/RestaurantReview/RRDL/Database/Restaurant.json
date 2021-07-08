@@ -1,12 +1,20 @@
 [
-    {
-        "Name" : "Seunghoon",
-        "City" : "Peninsula",
-        "State" : "Ohio"
-    },
-    {
-        "Name" : "Stephen",
-        "City" : "Houston",
-        "State" : "Texas"
-    }
+  {
+    "Name": "Seunghoon",
+    "City": "Peninsula",
+    "State": "OHIO",
+    "Reviews": null
+  },
+  {
+    "Name": "Stephen",
+    "City": "Houston",
+    "State": "TEXAS",
+    "Reviews": null
+  },
+  {
+    "Name": "Winkin Lizard",
+    "City": "Peninsula",
+    "State": "OHIO",
+    "Reviews": null
+  }
 ]

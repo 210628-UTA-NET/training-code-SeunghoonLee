@@ -20,9 +20,7 @@ namespace RRUI
 
             foreach (Restaurant rest in restaurants)
             {
-                Console.WriteLine("==================================");
                 Console.WriteLine(rest);
-                Console.WriteLine("==================================");
             }
 
             Console.WriteLine("[0] Go Back");

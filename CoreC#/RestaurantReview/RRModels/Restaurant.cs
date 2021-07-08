@@ -9,7 +9,6 @@ namespace RRModels
         private string _city;
         public Restaurant()
         {
-            Name = "Default";
         }
 
         public Restaurant(string p_name){
