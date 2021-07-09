@@ -36,14 +36,20 @@ namespace HelloWorld
 
             Console.WriteLine("Hello" == "Hello");
 
+            Console.Clear();
             Collection.CollectionMain();
 
+            Console.Clear();
             OOP.OOPMain();
 
+            Console.Clear();
             BoxingandUnboxing.BoxingAndUnboxingMain();
 
             Console.Clear();
             Serialization.SerializtionMain();
+
+            Console.Clear();
+            LINQ.LINQMain();
 
         }
     }
